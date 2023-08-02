@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100&family=Lobster&family=Pangolin&family=Raleway:wght@100&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 3px 3px 3px 4px rgb(73, 57, 57,0.2);
+    
+}
+.fa-solid{
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+}
+.logo_container img{
+    margin: 0px auto;
+    height: 150px;
+    width: 200px;
+}
+.circularlogo img{
+    height: 620px;
+    width: 620px;
+}
+.container{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.herocontent{
+    line-height: 38px;
+   
+}
+.tag{
+    background-color: green;
+    display: inline;
+    padding: 8px;
+    font-size: 1.2rem;
+    color: white;
+}
+h1{
+    font-size: 6rem;
+    padding-top: 15px ;
+    font-weight:100;
+    line-height: 100px;
+}
+.btn{
+    background-color: rgb(194, 194, 80);
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.1s ease-in-out;
+
+}
+.btn:hover{
+    background-color: rgb(207, 207, 17);
+    transition: 0.1s ease-in-out;
+}
+.features{
+    display: flex;
+    gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px ;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+.feature:hover{
+    box-shadow: 3px 3px 3px 4px rgb(73, 57, 57,0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.feature img{
+    height: 150px;
+    width: 150px;
+}
+.feature p{
+    font-size: 1rem;
+    padding: 15px;
+}
+.feature h2{
+    padding-top:15px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu h3{
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+.tag2{
+    background-color: green;
+    color:white;
+    display: inline;
+    padding: 10px;
+    width: 130px;
+    margin-top: 30px;
+}
+.grid{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.grid img{
+    border-radius: 6px;
+    height: 220px;
+    width: 220px;
+    box-shadow: 2px 2px 2px 2px rgb(8, 7, 7,0.4);
+    transition: 0.3s ease-in-out;
+    gap: 20px;
+}
+.grid img:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 0.3s ease-in-out;
+
+}
+.footersection{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.7;
+    padding: 50px;
+}
+li{
+   list-style:;
+   font-size: 17px;
+   cursor: pointer;
+}
+h4{
+    color: grey;
+    font-size: 1.9rem;
+    padding: 5px;
+
+}
+input{
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 4px;
+    width: 300px;
+}
+input:focus{
+    outline-color: red;
+}
+.icons{
+    cursor: pointer;
+    gap: 10px;
+}
+.iconcontainer{
+    display: flex;
+    margin-top: 10px;
+    gap: 27px;
+}
+
+
+@media ( max-width:1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation{
+        box-shadow: none;
+        
+    }
+    .logo container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .circularlogo img{
+        height: 100%;
+        width: 100%;
+    }
+    .herocontent{
+      padding: 10px;
+    }
+    .herocontent h1{
+        font-size: 4rem;
+        line-height: 69px;
+    }
+    .tag{
+        font-size: 15px;
+    }
+    .herocontent p{
+        padding-top: 5px;
+    font-size: 20px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .footersection{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
